@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubaid Shaikh - Software Engineer</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold gradient-text" href="#home">
+                <i class="fas fa-code me-2"></i>Ubaid Shaikh
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blogs">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="hero-particles">
+            <div class="particle" style="top: 10%; left: 10%; width: 8px; height: 8px; animation-delay: 0s;"></div>
+            <div class="particle" style="top: 20%; left: 80%; width: 6px; height: 6px; animation-delay: 1s;"></div>
+            <div class="particle" style="top: 60%; left: 15%; width: 10px; height: 10px; animation-delay: 2s;"></div>
+            <div class="particle" style="top: 80%; left: 70%; width: 4px; height: 4px; animation-delay: 3s;"></div>
+            <div class="particle" style="top: 30%; left: 60%; width: 8px; height: 8px; animation-delay: 4s;"></div>
+        </div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="animate-on-scroll">
+                        <h1 class="display-4 fw-bold mb-4">
+                            Hi, I'm <span class="gradient-text">Ubaid Shaikh</span>
+                        </h1>
+                        <h2 class="h3 mb-4">
+                            <span id="typing-text" class="typing-effect">Software Engineer</span>
+                        </h2>
+                        <p class="lead mb-5">
+                            Passionate software engineer specializing in cloud infrastructure, observability, and systems programming.
+                            Expert in compiler development, WebAssembly, LLVM, Python, Kubernetes, and AWS with a focus on building
+                            robust, scalable solutions.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#projects" class="btn btn-primary-gradient">
+                                <i class="fas fa-rocket me-2"></i>View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-outline-primary rounded-pill px-4">
+                                <i class="fas fa-envelope me-2"></i>Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="animate-on-scroll" style="animation-delay: 0.3s;">
+                        <div class="position-relative d-inline-block">
+                            <img src="img/me.jpg" alt="Ubaid Shaikh"
+                                 class="rounded-circle border border-4 border-primary"
+                                 style="width: 300px; height: 300px; object-fit: cover; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="animate-on-scroll">
+                        <h2 class="display-5 fw-bold mb-5">
+                            About <span class="gradient-text">Me</span>
+                        </h2>
+                        <p class="lead mb-4">
+                            I'm a software engineer with 3+ years of experience specializing in cloud infrastructure, observability,
+                            and systems programming. I work on building robust monitoring solutions, cloud-native applications,
+                            and have extensive experience in compiler development and WebAssembly technologies.
+                        </p>
+                        <p class="mb-5">
+                            Graduate from IIT Indore (CGPA: 9.14) with a strong background in compiler development, having contributed
+                            to LFortran and LPython ecosystems. Google Summer of Code 2022 participant and speaker at PyCon India 2023.
+                            I enjoy tackling complex technical challenges, building scalable systems, and contributing to open-source projects.
+                        </p>
+
+                        <div class="row g-4 mt-5">
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="gradient-text display-6 fw-bold">15+</div>
+                                    <p class="mb-0">Projects Completed</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="gradient-text display-6 fw-bold">3+</div>
+                                    <p class="mb-0">Years Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="gradient-text display-6 fw-bold">9.14</div>
+                                    <p class="mb-0">IIT Indore CGPA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="animate-on-scroll">
+                    <h2 class="display-5 fw-bold mb-3">
+                        My <span class="gradient-text">Skills</span>
+                    </h2>
+                    <p class="lead">Technologies and tools I work with</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card animate-on-scroll">
+                        <div class="gradient-text mb-3">
+                            <i class="fas fa-code fa-3x"></i>
+                        </div>
+                        <h5 class="mb-3">C++/C</h5>
+                        <p class="mb-3">System Programming, Compiler Development</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="95"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card animate-on-scroll" style="animation-delay: 0.1s;">
+                        <div class="gradient-text mb-3">
+                            <i class="fab fa-python fa-3x"></i>
+                        </div>
+                        <h5 class="mb-3">Python</h5>
+                        <p class="mb-3">Backend Development, Automation, Data Science</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card animate-on-scroll" style="animation-delay: 0.2s;">
+                        <div class="gradient-text mb-3">
+                            <i class="fas fa-cube fa-3x"></i>
+                        </div>
+                        <h5 class="mb-3">WebAssembly</h5>
+                        <p class="mb-3">WASI, Emscripten, Compiler Backends</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card animate-on-scroll" style="animation-delay: 0.3s;">
+                        <div class="gradient-text mb-3">
+                            <i class="fas fa-cogs fa-3x"></i>
+                        </div>
+                        <h5 class="mb-3">LLVM</h5>
+                        <p class="mb-3">Compiler Infrastructure, IR Generation</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card animate-on-scroll" style="animation-delay: 0.4s;">
+                        <div class="gradient-text mb-3">
+                            <i class="fab fa-aws fa-3x"></i>
+                        </div>
+                        <h5 class="mb-3">AWS & Cloud</h5>
+                        <p class="mb-3">GovCloud, FedRAMP, Infrastructure</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card animate-on-scroll" style="animation-delay: 0.5s;">
+                        <div class="gradient-text mb-3">
+                            <i class="fas fa-dharmachakra fa-3x"></i>
+                        </div>
+                        <h5 class="mb-3">Kubernetes</h5>
+                        <p class="mb-3">Container Orchestration, DevOps</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card animate-on-scroll" style="animation-delay: 0.6s;">
+                        <div class="gradient-text mb-3">
+                            <i class="fas fa-chart-line fa-3x"></i>
+                        </div>
+                        <h5 class="mb-3">Observability</h5>
+                        <p class="mb-3">Prometheus, Grafana, Monitoring</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card animate-on-scroll" style="animation-delay: 0.7s;">
+                        <div class="gradient-text mb-3">
+                            <i class="fab fa-js-square fa-3x"></i>
+                        </div>
+                        <h5 class="mb-3">JavaScript</h5>
+                        <p class="mb-3">React, NextJS, Full-Stack Development</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="animate-on-scroll">
+                    <h2 class="display-5 fw-bold mb-3">
+                        Featured <span class="gradient-text">Projects</span>
+                    </h2>
+                    <p class="lead">Some of my recent work</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 animate-on-scroll">
+                        <div class="card-body p-4">
+                            <div class="gradient-text mb-3">
+                                <i class="fas fa-cube fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">LFortran Compiler</h5>
+                            <p class="card-text mb-4">
+                                Contributed to LFortran compiler development, including WebAssembly backend creation
+                                and WASI support. Enabled Fortran to run in web browsers and interface with CPython libraries.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">C++</span>
+                                <span class="badge bg-primary me-2">WebAssembly</span>
+                                <span class="badge bg-primary">LLVM</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/lfortran/lfortran" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github me-1"></i>Code
+                                </a>
+                                <a href="https://dev.lfortran.org/" class="btn btn-sm btn-primary-gradient">
+                                    <i class="fas fa-external-link-alt me-1"></i>Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 animate-on-scroll" style="animation-delay: 0.1s;">
+                        <div class="card-body p-4">
+                            <div class="gradient-text mb-3">
+                                <i class="fas fa-globe fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Fortran-On-Web</h5>
+                            <p class="card-text mb-4">
+                                Demonstrates Fortran running in web browsers using LFortran's WebAssembly compilation.
+                                Includes examples like MNIST classifier, 2D matrix multiplication, and linear regression.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">Fortran</span>
+                                <span class="badge bg-primary me-2">WebAssembly</span>
+                                <span class="badge bg-primary">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/lfortran/Fortran-On-Web" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github me-1"></i>Code
+                                </a>
+                                <a href="https://lfortran.github.io/Fortran-On-Web/" class="btn btn-sm btn-primary-gradient">
+                                    <i class="fas fa-external-link-alt me-1"></i>Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 animate-on-scroll" style="animation-delay: 0.2s;">
+                        <div class="card-body p-4">
+                            <div class="gradient-text mb-3">
+                                <i class="fas fa-chart-line fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Observability Tools</h5>
+                            <p class="card-text mb-4">
+                                Developed monitoring and alerting tools at Abnormal Security including Prometheus exporters,
+                                PagerDuty integrations, and Kafka exporters for enhanced system observability.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">Python</span>
+                                <span class="badge bg-primary me-2">Prometheus</span>
+                                <span class="badge bg-primary">Kubernetes</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-lock me-1"></i>Private
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary-gradient">
+                                    <i class="fas fa-building me-1"></i>Enterprise
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 animate-on-scroll" style="animation-delay: 0.3s;">
+                        <div class="card-body p-4">
+                            <div class="gradient-text mb-3">
+                                <i class="fas fa-microchip fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Parallel FPGA Router</h5>
+                            <p class="card-text mb-4">
+                                B.Tech project implementing Lagrangian Heuristics for parallel FPGA routing.
+                                Achieved 5.08% reduction in minimum channel width and 0.68% reduction in critical path delay on VTR benchmark.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">C++</span>
+                                <span class="badge bg-primary me-2">Algorithms</span>
+                                <span class="badge bg-primary">FPGA</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-lock me-1"></i>Private
+                                </a>
+                                <a href="https://doi.org/10.1109/ACCESS.2023.3328769" class="btn btn-sm btn-primary-gradient">
+                                    <i class="fas fa-file-alt me-1"></i>Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 animate-on-scroll" style="animation-delay: 0.4s;">
+                        <div class="card-body p-4">
+                            <div class="gradient-text mb-3">
+                                <i class="fas fa-route fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Maze Algorithm Analysis</h5>
+                            <p class="card-text mb-4">
+                                Comprehensive analysis of four maze generating algorithms: Recursive Backtracking, Hunt and Kill,
+                                Aldous Broder, and Wilson's Algorithm with interactive visualizations.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">p5.js</span>
+                                <span class="badge bg-primary me-2">Node.js</span>
+                                <span class="badge bg-primary">Algorithms</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/ubaidsk/Implementation-and-Analysis-of-Maze-Generating-Algorithms" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github me-1"></i>Code
+                                </a>
+                                <a href="https://ubaidsk.github.io/Implementation-and-Analysis-of-Maze-Generating-Algorithms/" class="btn btn-sm btn-primary-gradient">
+                                    <i class="fas fa-external-link-alt me-1"></i>Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 animate-on-scroll" style="animation-delay: 0.5s;">
+                        <div class="card-body p-4">
+                            <div class="gradient-text mb-3">
+                                <i class="fas fa-comments fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">WhatsAny1</h5>
+                            <p class="card-text mb-4">
+                                Progressive Web App for sending WhatsApp messages without saving contacts. Features country code support,
+                                contact history, and generates WhatsApp API links for instant messaging on mobile devices.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">Next.js</span>
+                                <span class="badge bg-primary me-2">TailwindCSS</span>
+                                <span class="badge bg-primary">PWA</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/ubaidsk/whatsany1" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github me-1"></i>Code
+                                </a>
+                                <a href="https://ubaidsk.github.io/whatsany1/" class="btn btn-sm btn-primary-gradient">
+                                    <i class="fas fa-external-link-alt me-1"></i>Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5">
+                        <div class="animate-on-scroll">
+                            <h2 class="display-5 fw-bold mb-3">
+                                Get In <span class="gradient-text">Touch</span>
+                            </h2>
+                            <p class="lead">Let's work together on your next project</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form animate-on-scroll">
+                        <!-- Contact Form -->
+                        <div id="contact-form-container">
+                            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfhUIiifGi2fSSBwuDSaLNFStfxU7eNk7E4sI1zLaUVIdh_tA/formResponse"
+                                  method="POST"
+                                  target="hidden-iframe"
+                                  onsubmit="showSuccessMessage()">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label for="contact-name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="contact-name" name="entry.201674409" placeholder="Your full name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="contact-email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="contact-email" name="entry.1888292093" placeholder="your@email.com" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="contact-subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="contact-subject" name="entry.1097563816" placeholder="What's this about?" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="contact-message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="contact-message" name="entry.1236758430" rows="6" placeholder="Tell me about your project, question, or just say hello!" required></textarea>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary-gradient btn-lg" id="submit-btn">
+                                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- Hidden iframe to handle form submission -->
+                            <iframe name="hidden-iframe" id="hidden-iframe" style="display: none;"></iframe>
+                        </div>
+
+                        <!-- Success message (initially hidden) -->
+                        <div id="success-container" class="mt-4" style="display: none;">
+                            <div class="card border-success">
+                                <div class="card-body text-center p-5">
+                                    <div class="gradient-text mb-4">
+                                        <i class="fas fa-check-circle fa-4x"></i>
+                                    </div>
+                                    <h4 class="card-title text-success mb-3">Message Sent Successfully!</h4>
+                                    <p class="card-text mb-4">
+                                        Thank you for reaching out! I've received your message and will get back to you as soon as possible.
+                                        I typically respond within 24-48 hours.
+                                    </p>
+                                    <button type="button" class="btn btn-primary-gradient" onclick="resetForm()">
+                                        <i class="fas fa-envelope me-2"></i>Send Another Message
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <div class="social-links animate-on-scroll">
+                            <a href="https://github.com/ubaidsk" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/ubaidsk" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://stackoverflow.com/users/11474769/ubaid-shaikh" target="_blank" title="Stack Overflow">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                            <a href="https://hub.docker.com/u/ubaids" target="_blank" title="Docker Hub">
+                                <i class="fab fa-docker"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="mailto:shaikhubaid769@gmail.com" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 border-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Ubaid Shaikh. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Built with <i class="fas fa-heart text-danger"></i> and Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
