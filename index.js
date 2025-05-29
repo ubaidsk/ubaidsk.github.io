@@ -1,5 +1,25 @@
 // Portfolio JavaScript - Ubaid Shaikh
 
+// Suppress browser extension related errors
+window.addEventListener('error', function(e) {
+    // Suppress common browser extension errors
+    if (e.message && e.message.includes('message channel closed')) {
+        e.preventDefault();
+        return true;
+    }
+});
+
+// Suppress unhandled promise rejections from extensions
+window.addEventListener('unhandledrejection', function(e) {
+    // Suppress browser extension related promise rejections
+    if (e.reason && e.reason.message &&
+        (e.reason.message.includes('message channel closed') ||
+         e.reason.message.includes('listener indicated an asynchronous response'))) {
+        e.preventDefault();
+        return true;
+    }
+});
+
 // Theme Toggle
 function toggleTheme() {
     const html = document.documentElement;
