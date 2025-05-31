@@ -75,10 +75,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Typing effect
+// Typing effect - optimized for performance
 const typingTexts = [
     'Software Engineer',
-    'Open Source Contributor',
+    'Open Source Contributor', 
     'Cloud Infrastructure Expert',
     'Compiler & WebAssembly Developer',
     'Observability & Monitoring Specialist'
@@ -90,6 +90,8 @@ let isDeleting = false;
 const typingElement = document.getElementById('typing-text');
 
 function typeWriter() {
+    if (!typingElement) return; // Safety check
+    
     const currentText = typingTexts[textIndex];
 
     if (isDeleting) {
@@ -114,8 +116,11 @@ function typeWriter() {
     setTimeout(typeWriter, typeSpeed);
 }
 
-// Start typing effect
-typeWriter();
+// Defer animations until after page load for better LCP
+window.addEventListener('load', () => {
+    // Start typing effect after page loads
+    setTimeout(typeWriter, 1000);
+});
 
 // Scroll animations
 const observerOptions = {
@@ -145,27 +150,7 @@ document.querySelectorAll('.animate-on-scroll').forEach(el => {
     observer.observe(el);
 });
 
-// Add some interactive particles
-function createParticle() {
-    const particle = document.createElement('div');
-    particle.className = 'particle';
-    particle.style.left = Math.random() * 100 + '%';
-    particle.style.top = Math.random() * 100 + '%';
-    particle.style.width = (Math.random() * 8 + 4) + 'px';
-    particle.style.height = particle.style.width;
-    particle.style.animationDelay = Math.random() * 6 + 's';
-    particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
-
-    document.querySelector('.hero-particles').appendChild(particle);
-
-    // Remove particle after animation
-    setTimeout(() => {
-        particle.remove();
-    }, 8000);
-}
-
-// Create particles periodically
-setInterval(createParticle, 3000);
+// Particles removed for better performance
 
 // Contact form functions
 function showSuccessMessage() {
