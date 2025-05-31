@@ -6,6 +6,13 @@
     <meta name="description" content="Ubaid Shaikh - Software Engineer specializing in cloud infrastructure, observability, and systems programming. Expert in compiler development, WebAssembly, LLVM, Python, Kubernetes, and AWS.">
     <title>Ubaid Shaikh - Software Engineer</title>
 
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></noscript>
+    <link rel="preload" href="style.css" as="style">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
@@ -13,14 +20,63 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="icon" type="image/x-icon" href="img/favicon_io/favicon.ico">
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons - Load asynchronously -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Critical CSS -->
+    <style>
+        /* Critical CSS for faster rendering */
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #8b5cf6;
+            --text-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+            margin: 0;
+        }
+        body.fonts-loaded {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+        }
+        .gradient-text {
+            background: var(--text-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-section {
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            position: relative;
+            padding-top: 80px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font loading optimization -->
+    <script>
+        // Font loading optimization
+        if ('fonts' in document) {
+            document.fonts.ready.then(function() {
+                document.body.classList.add('fonts-loaded');
+            });
+        } else {
+            // Fallback for browsers without font loading API
+            setTimeout(function() {
+                document.body.classList.add('fonts-loaded');
+            }, 300);
+        }
+    </script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -109,6 +165,8 @@
                     <div class="animate-on-scroll" style="animation-delay: 0.3s;">
                         <div class="position-relative d-inline-block">
                             <img src="img/me.jpg" alt="Ubaid Shaikh"
+                                 loading="lazy"
+                                 width="300" height="300"
                                  class="rounded-circle border border-4 border-primary"
                                  style="width: 300px; height: 300px; object-fit: cover; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);">
                         </div>
@@ -747,10 +805,10 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS - defer loading -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 
-    <!-- Custom JavaScript -->
-    <script src="index.js"></script>
+    <!-- Custom JavaScript - defer loading -->
+    <script src="index.js" defer></script>
 </body>
 </html>
