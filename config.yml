@@ -96,9 +96,9 @@ params:
   # icon: icon.png
   # iconHeight: 35
 
-  analytics:
-    google:
-      SiteVerificationTag: "G-ZRHK2B8FTL"
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: ""
 
   assets:
     disableHLJS: true
@@ -152,7 +152,9 @@ markup:
 #     disabled: false
 #     privacyEnhanced: true
 
-# services:
+services:
+  googleAnalytics:
+    id: G-ZRHK2B8FTL
 #   instagram:
 #     disableInlineCSS: true
 #   x:
