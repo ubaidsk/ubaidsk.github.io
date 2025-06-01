@@ -53,8 +53,8 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
+  description: "Ubaid Shaikh's Blog - https://github.com/ubaidsk/blog"
+  author: Ubaid Shaikh
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
@@ -96,9 +96,9 @@ params:
   # icon: icon.png
   # iconHeight: 35
 
-  # analytics:
-  #     google:
-  #         SiteVerificationTag: "XYZabc"
+  analytics:
+    google:
+      SiteVerificationTag: "G-ZRHK2B8FTL"
 
   assets:
     disableHLJS: true
