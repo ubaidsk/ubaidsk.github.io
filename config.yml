@@ -3,7 +3,7 @@
 baseURL: "https://ubaidsk.github.io/blog/"
 title: Ubaid's Blog
 copyright: "© 2025 Ubaid Shaikh"
-theme: [hugo-PaperMod]
+theme: ["PaperMod"]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
