@@ -35,9 +35,12 @@ menu:
     - name: Posts
       url: posts/
       weight: 1
+    - name: Tags
+      url: tags/
+      weight: 2
     - name: ubaidshaikh
       url: https://ubaidsk.github.io
-      weight: 2
+      weight: 3
 
 outputs:
   home:
