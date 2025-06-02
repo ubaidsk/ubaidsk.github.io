@@ -1,9 +1,8 @@
-/* Custom styles to match main portfolio theme */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+/* Custom CSS for Hugo PaperMod theme - Portfolio Style */
 
-/* Override theme variables with portfolio colors */
+/* CSS Custom Properties */
 :root {
-    --gap: 24px;
+    /* Layout dimensions */
     --content-gap: 20px;
     --nav-width: 1024px;
     --main-width: 720px;
@@ -21,13 +20,21 @@
     --code-block-bg: #f8fafc;
     --code-bg: #f1f5f9;
     --border: #cbd5e1;
-    --theme-rgb: 255, 255, 255;
     
-    /* Gradient colors from portfolio */
+    /* Portfolio gradient colors */
     --gradient-start: #3b82f6;
     --gradient-end: #8b5cf6;
+    
+    /* Code syntax highlighting colors */
+    --code-text: #1e293b;
+    --code-comment: #64748b;
+    --code-keyword: #7c3aed;
+    --code-string: #059669;
+    --code-number: #dc2626;
+    --code-function: #2563eb;
 }
 
+/* Dark theme colors */
 .dark {
     --theme: #0d1117;
     --entry: #161b22;
@@ -38,28 +45,49 @@
     --code-block-bg: #161b22;
     --code-bg: #21262d;
     --border: #30363d;
-    --theme-rgb: 13, 17, 23;
+    
+    /* Dark theme syntax highlighting */
+    --code-text: #e6edf3;
+    --code-comment: #8b949e;
+    --code-keyword: #a855f7;
+    --code-string: #22c55e;
+    --code-number: #f87171;
+    --code-function: #60a5fa;
 }
 
-/* Font override to match portfolio */
+/* Global base styles */
+html {
+    min-height: 100vh;
+    background-color: var(--theme);
+    -webkit-overflow-scrolling: touch;
+}
+
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
-    background: var(--theme);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: var(--theme);
     color: var(--primary);
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Gradient text utility class from portfolio */
-.gradient-text {
-    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 600;
+/* Layout containers */
+.main {
+    flex: 1;
+    padding: 20px var(--gap);
+    background: var(--theme);
 }
 
-/* Enhanced header styling */
+.header,
+.footer {
+    background: var(--theme);
+}
+
+/* Header styling */
 .header {
-    background: rgba(var(--theme-rgb), 0.85);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
@@ -68,21 +96,26 @@ body {
     z-index: 100;
 }
 
+.dark .header {
+    background: rgba(13, 17, 23, 0.85);
+}
+
 .nav {
     padding: 4px var(--gap);
     line-height: var(--header-height);
 }
 
+/* Logo styling */
 .logo a {
-    font-weight: 700 !important;
-    font-size: 1.5rem !important;
+    font-weight: 700;
+    font-size: 1.5rem;
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-/* Navigation menu styling */
+/* Navigation menu */
 #menu a {
     font-weight: 500;
     transition: all 0.3s ease;
@@ -95,10 +128,10 @@ body {
 #menu .active {
     color: var(--primary);
     background: var(--tertiary);
-    border-bottom: none !important;
+    border-bottom: none;
 }
 
-/* Theme toggle button enhancement */
+/* Theme toggle button */
 #theme-toggle {
     background: transparent;
     border: none;
@@ -115,7 +148,17 @@ body {
     color: var(--primary);
 }
 
-/* Page headers */
+#theme-toggle svg {
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover svg {
+    transform: scale(1.1);
+}
+
+/* Page headers with gradient text */
 .page-header h1,
 .post-title {
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
@@ -125,13 +168,13 @@ body {
     font-weight: 700;
 }
 
-/* Post cards/entries styling */
+/* Post entries */
 .post-entry {
-    background: var(--entry) !important;
-    border: 1px solid var(--border) !important;
-    border-radius: var(--radius) !important;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
     transition: all 0.3s ease;
-    padding: 24px !important;
+    padding: 24px;
 }
 
 .post-entry:hover {
@@ -143,155 +186,61 @@ body {
 .post-entry .entry-header h2 {
     color: var(--primary);
     font-weight: 600;
+    font-size: 1.4rem;
 }
 
 .post-entry .entry-content {
     color: var(--secondary);
+    font-size: 13px;
 }
 
-/* Breadcrumbs styling */
+/* Breadcrumbs */
 .breadcrumbs a {
-    color: var(--gradient-start) !important;
+    color: var(--gradient-start);
     text-decoration: none;
     font-weight: 500;
 }
 
 .breadcrumbs a:hover {
-    color: var(--gradient-end) !important;
+    color: var(--gradient-end);
 }
 
-/* Footer styling */
+/* Footer */
 .footer {
     background: var(--theme);
     border-top: 1px solid var(--border);
-    margin-top: 40px;
+    padding: 18px var(--gap);
+    margin-top: auto;
+    flex-shrink: 0;
+    text-align: center;
 }
 
-/* Code blocks enhancement */
+/* Code blocks */
 .post-content pre,
 .highlight {
-    background: var(--code-block-bg) !important;
+    background: var(--code-block-bg);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    color: var(--content) !important;
+    color: var(--content);
 }
 
 .post-content pre code {
-    background: transparent !important;
-    color: var(--content) !important;
+    background: transparent;
+    color: var(--content);
     padding: 0;
     border-radius: 0;
 }
 
 .post-content code {
-    background: var(--code-bg) !important;
-    color: var(--content) !important;
+    background: var(--code-bg);
+    color: var(--content);
     padding: 2px 6px;
     border-radius: 4px;
     font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace;
+    font-size: 13px;
 }
 
-/* Syntax highlighting overrides for light theme */
-:root {
-    --code-text: #1e293b;
-    --code-comment: #64748b;
-    --code-keyword: #7c3aed;
-    --code-string: #059669;
-    --code-number: #dc2626;
-    --code-function: #2563eb;
-}
-
-.dark {
-    --code-text: #e6edf3;
-    --code-comment: #8b949e;
-    --code-keyword: #a855f7;
-    --code-string: #22c55e;
-    --code-number: #f87171;
-    --code-function: #60a5fa;
-}
-
-/* Syntax highlighting classes */
-.highlight .c,  /* Comment */
-.highlight .cm, /* Comment.Multiline */
-.highlight .cp, /* Comment.Preproc */
-.highlight .c1, /* Comment.Single */
-.highlight .cs { /* Comment.Special */
-    color: var(--code-comment) !important;
-}
-
-.highlight .k,  /* Keyword */
-.highlight .kc, /* Keyword.Constant */
-.highlight .kd, /* Keyword.Declaration */
-.highlight .kn, /* Keyword.Namespace */
-.highlight .kp, /* Keyword.Pseudo */
-.highlight .kr, /* Keyword.Reserved */
-.highlight .kt { /* Keyword.Type */
-    color: var(--code-keyword) !important;
-    font-weight: 600;
-}
-
-.highlight .s,  /* Literal.String */
-.highlight .sa, /* Literal.String.Affix */
-.highlight .sb, /* Literal.String.Backtick */
-.highlight .sc, /* Literal.String.Char */
-.highlight .dl, /* Literal.String.Delimiter */
-.highlight .sd, /* Literal.String.Doc */
-.highlight .s2, /* Literal.String.Double */
-.highlight .se, /* Literal.String.Escape */
-.highlight .sh, /* Literal.String.Heredoc */
-.highlight .si, /* Literal.String.Interpol */
-.highlight .sx, /* Literal.String.Other */
-.highlight .sr, /* Literal.String.Regex */
-.highlight .s1, /* Literal.String.Single */
-.highlight .ss { /* Literal.String.Symbol */
-    color: var(--code-string) !important;
-}
-
-.highlight .m,  /* Literal.Number */
-.highlight .mb, /* Literal.Number.Bin */
-.highlight .mf, /* Literal.Number.Float */
-.highlight .mh, /* Literal.Number.Hex */
-.highlight .mi, /* Literal.Number.Integer */
-.highlight .il, /* Literal.Number.Integer.Long */
-.highlight .mo { /* Literal.Number.Oct */
-    color: var(--code-number) !important;
-}
-
-.highlight .n,  /* Name */
-.highlight .na, /* Name.Attribute */
-.highlight .nb, /* Name.Builtin */
-.highlight .nc, /* Name.Class */
-.highlight .ne, /* Name.Exception */
-.highlight .nf, /* Name.Function */
-.highlight .nl, /* Name.Label */
-.highlight .nn, /* Name.Namespace */
-.highlight .nt, /* Name.Tag */
-.highlight .nv, /* Name.Variable */
-.highlight .bp, /* Name.Builtin.Pseudo */
-.highlight .vc, /* Name.Variable.Class */
-.highlight .vg, /* Name.Variable.Global */
-.highlight .vi { /* Name.Variable.Instance */
-    color: var(--code-text) !important;
-}
-
-.highlight .nf, /* Name.Function */
-.highlight .fm { /* Name.Function.Magic */
-    color: var(--code-function) !important;
-    font-weight: 600;
-}
-
-/* Ensure all code elements use proper contrast */
-code, pre, .highlight {
-    color: var(--code-text) !important;
-}
-
-/* Override any inherited styles that might interfere */
-.post-content .highlight pre {
-    color: var(--code-text) !important;
-    background: var(--code-block-bg) !important;
-}
-
-/* Inline code styling */
+/* Inline code with better specificity */
 .post-content p code,
 .post-content li code,
 .post-content h1 code,
@@ -300,15 +249,42 @@ code, pre, .highlight {
 .post-content h4 code,
 .post-content h5 code,
 .post-content h6 code {
-    background: var(--code-bg) !important;
-    color: var(--code-text) !important;
+    background: var(--code-bg);
+    color: var(--code-text);
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 0.9em;
     border: 1px solid var(--border);
 }
 
-/* Links styling */
+/* Syntax highlighting */
+.highlight .c, .highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs {
+    color: var(--code-comment);
+}
+
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt {
+    color: var(--code-keyword);
+    font-weight: 600;
+}
+
+.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+    color: var(--code-string);
+}
+
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo {
+    color: var(--code-number);
+}
+
+.highlight .n, .highlight .na, .highlight .nb, .highlight .nc, .highlight .ne, .highlight .nf, .highlight .nl, .highlight .nn, .highlight .nt, .highlight .nv, .highlight .bp, .highlight .vc, .highlight .vg, .highlight .vi {
+    color: var(--code-text);
+}
+
+.highlight .nf, .highlight .fm {
+    color: var(--code-function);
+    font-weight: 600;
+}
+
+/* Links */
 .post-content a {
     color: var(--gradient-start);
     text-decoration: none;
@@ -322,57 +298,18 @@ code, pre, .highlight {
     border-bottom-color: var(--gradient-end);
 }
 
-/* Tags styling */
+/* Tags */
 .post-tags a {
-    background: var(--tertiary) !important;
-    border: 1px solid var(--border) !important;
-    color: var(--secondary) !important;
+    background: var(--tertiary);
+    border: 1px solid var(--border);
+    color: var(--secondary);
     transition: all 0.3s ease;
 }
 
 .post-tags a:hover {
-    background: var(--gradient-start) !important;
-    color: white !important;
-    border-color: var(--gradient-start) !important;
-}
-
-/* Search functionality */
-.search-results {
-    background: var(--entry);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-}
-
-/* Pagination */
-.pagination a {
-    background: var(--tertiary) !important;
-    color: var(--primary) !important;
-    border: 1px solid var(--border);
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.pagination a:hover {
-    background: var(--gradient-start) !important;
+    background: var(--gradient-start);
+    color: white;
     border-color: var(--gradient-start);
-    transform: translateY(-1px);
-}
-
-/* Table of contents */
-.toc {
-    background: var(--entry);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 20px;
-}
-
-.toc a {
-    color: var(--secondary);
-    transition: color 0.3s ease;
-}
-
-.toc a:hover {
-    color: var(--gradient-start) !important;
 }
 
 /* Social icons */
@@ -389,47 +326,84 @@ code, pre, .highlight {
     transform: translateY(-2px);
 }
 
-/* Archive page styling */
-.archive-posts .archive-year {
-    color: var(--gradient-start);
+/* Profile mode */
+.profile {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.profile_inner {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 3px solid var(--border);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+.profile h1 {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
 }
 
-.archive-posts .archive-month {
+.profile span {
     color: var(--secondary);
-    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    display: block;
 }
 
-.archive-posts .archive-entry a {
+.profile .social-icons {
+    margin: 2rem 0;
+}
+
+.profile .buttons {
+    margin-top: 2rem;
+}
+
+.profile .button {
+    background: var(--tertiary);
+    border: 1px solid var(--border);
     color: var(--primary);
-    transition: color 0.3s ease;
+    padding: 12px 24px;
+    margin: 0 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
-.archive-posts .archive-entry a:hover {
-    color: var(--gradient-start);
+.profile .button:hover {
+    background: var(--gradient-start);
+    color: white;
+    border-color: var(--gradient-start);
+    transform: translateY(-2px);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .nav {
-        padding: 0 16px;
-    }
-    
-    .main {
-        padding: 16px;
-    }
-    
-    .post-entry {
-        padding: 16px !important;
-    }
-}
-
-/* Home info section enhancement */
+/* Home info section */
 .home-info {
-    background: var(--entry) !important;
-    border: 1px solid var(--border) !important;
-    border-radius: var(--radius) !important;
-    padding: 32px !important;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
     text-align: center;
 }
 
@@ -453,22 +427,39 @@ code, pre, .highlight {
     color: var(--secondary);
 }
 
-/* Button styling for any CTAs */
-.btn-primary {
-    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-    border: none;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-block;
+/* Pagination */
+.pagination a {
+    background: var(--tertiary);
+    color: var(--primary);
+    border: 1px solid var(--border);
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+.pagination a:hover {
+    background: var(--gradient-start);
+    border-color: var(--gradient-start);
+    transform: translateY(-1px);
+}
+
+/* Archive page */
+.archive-posts .archive-year {
+    color: var(--gradient-start);
+    font-weight: 700;
+}
+
+.archive-posts .archive-month {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.archive-posts .archive-entry a {
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+.archive-posts .archive-entry a:hover {
+    color: var(--gradient-start);
 }
 
 /* Custom scrollbar */
@@ -489,15 +480,36 @@ code, pre, .highlight {
     background: var(--border);
 }
 
-/* Legacy styles */
-.twitter-tweet {
-    margin: auto;
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav {
+        padding: 0 16px;
+    }
+    
+    .main {
+        padding: 16px;
+    }
+    
+    .post-entry {
+        padding: 16px;
+    }
 }
 
+/* List background override */
+.list {
+    background: var(--theme);
+}
+
+/* Legacy iframe styles */
 iframe {
-    border-radius: var(--radius) !important;
+    border-radius: var(--radius);
 }
 
 .entry-cover img {
     border: 1px solid var(--border);
+}
+
+/* Box-sizing reset */
+*, *::before, *::after {
+    box-sizing: border-box;
 }
