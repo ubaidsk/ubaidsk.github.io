@@ -46,37 +46,37 @@ Our project was mostly completed in four phases as follows:
 
 - **Pre-GSoC Phase:** During this phase we iterated over the design of the `wasm` backend and implemented it.
 The weekly blogs during this phase are as follows:
-    - [Pre-GSoC Blog 1: Contributing to Integration Tests](https://www.ubaidshaikh.me/blogs/gsoc_0~1_contributing_to_integration_tests)
+    - [Pre-GSoC Blog 1: Contributing to Integration Tests](/posts/gsoc-0-1-contributing-to-integration-tests)
 
-    - [Pre-GSoC Blog 2: The Designing of the ASR->WASM Backend](https://www.ubaidshaikh.me/blogs/gsoc_0~2_asr_to_wasm_backend)
+    - [Pre-GSoC Blog 2: The Designing of the ASR->WASM Backend](/posts/gsoc-0-2-asr-to-wasm-backend)
 
 - **GSoC Phase-1:** During this phase we designed the `wat` backend and added initial support for compiling `lfortran` to `wasm`. We also deployed the built `lfortran` `wasm` binary to a live site. The weekly blogs during this phase are as follows:
-    - [GSoC Blog 1: The Designing of the WASM->WAT Backend](https://www.ubaidshaikh.me/blogs/gsoc_1_wasm_to_wat_backend)
+    - [GSoC Blog 1: The Designing of the WASM->WAT Backend](/posts/gsoc-1-wasm-to-wat-backend)
 
-    - [GSoC Blog 2: Enabling LLVM Based WASM Backend and Build LFortran to WASM](https://www.ubaidshaikh.me/blogs/gsoc_2_llvm_wasm_backend_and_build_to_wasm)
+    - [GSoC Blog 2: Enabling LLVM Based WASM Backend and Build LFortran to WASM](/posts/gsoc-2-llvm-wasm-backend-and-build-to-wasm)
 
-    - [GSoC Blog 3: Extending WASM and WAT Backends](https://www.ubaidshaikh.me/blogs/gsoc_3_extending_wasm_and_wat_backends)
+    - [GSoC Blog 3: Extending WASM and WAT Backends](/posts/gsoc-3-extending-wasm-and-wat-backends)
 
-    - [GSoC Blog 4: Adding Print support and Deploying on Live Site](https://www.ubaidshaikh.me/blogs/gsoc_4_print_and_lcompilers_frontend)
+    - [GSoC Blog 4: Adding Print support and Deploying on Live Site](/posts/gsoc-4-print-and-lcompilers-frontend)
 
 - **GSoC Phase-2:** Now that we had the `wasm` backend, the `wat` backend and compilation of `lfortran` to `wasm`.
 The next part of the project was to extend the `wasm` and `wat` backends to support more features of `fortran`/`ASR`. This extension of both the backends was accomplished in this phase. The weekly blogs during this phase are as follows:
-    - [GSoC Blog 5: NodeJS Testing Infrastructure and Supporting Basic If-Else](https://www.ubaidshaikh.me/blogs/gsoc_5_nodejs_testing_and_basic_if_else)
+    - [GSoC Blog 5: NodeJS Testing Infrastructure and Supporting Basic If-Else](/posts/gsoc-5-nodejs-testing-and-basic-if-else)
 
-    - [GSoC Blog 6: Type Conversions and Supporting More Operators](https://www.ubaidshaikh.me/blogs/gsoc_6_type_conversion_and_extend_operators_support)
+    - [GSoC Blog 6: Type Conversions and Supporting More Operators](/posts/gsoc-6-type-conversion-and-extend-operators-support)
 
-    - [GSoC Blog 7: Supporting Loops and Other Improvements](https://www.ubaidshaikh.me/blogs/gsoc_7_loops_and_various_improvements)
+    - [GSoC Blog 7: Supporting Loops and Other Improvements](/posts/gsoc-7-loops-and-various-improvements)
 
-    - [GSoC Blog 8: Supporting Subroutines and Improving/Refactoring WASM Backend](https://www.ubaidshaikh.me/blogs/gsoc_8_subroutines_and_refactoring)
+    - [GSoC Blog 8: Supporting Subroutines and Improving/Refactoring WASM Backend](/posts/gsoc-8-subroutines-and-refactoring)
 
-    - [GSoC Blog 9: Initial Support for Arrays](https://www.ubaidshaikh.me/blogs/gsoc_9_supporting_arrays)
+    - [GSoC Blog 9: Initial Support for Arrays](/posts/gsoc-9-supporting-arrays)
 
-    - [GSoC Blog 10: Supporting Multi-Dimensional Arrays and WASM Testing at CI](https://www.ubaidshaikh.me/blogs/gsoc_10_multi_dim_arrays_and_wasm_testing_at_ci)
+    - [GSoC Blog 10: Supporting Multi-Dimensional Arrays and WASM Testing at CI](/posts/gsoc-10-multi-dim-arrays-and-wasm-testing-at-ci)
 
-    - [GSoC Blog 11: Various Fixes and Improvements in the WASM Backend](https://www.ubaidshaikh.me/blogs/gsoc_11_various_fixes_and_improvements)
+    - [GSoC Blog 11: Various Fixes and Improvements in the WASM Backend](/posts/gsoc-11-various-fixes-and-improvements)
 
 - **GSoC Ending Phase:** This comprises the final week(s) of GSoC where we focused on `CI` (Continuous Integration) support for wasm building, its storage and some final features and fixes. The blog during this phase is as follows:
-    - [GSoC Blog 12: Supporting Several Features and Final Fixes](https://www.ubaidshaikh.me/blogs/gsoc_12_several_features_and_final_fixes)
+    - [GSoC Blog 12: Supporting Several Features and Final Fixes](/posts/gsoc-12-several-features-and-final-fixes)
 
 ### Merge/Pull Requests
 
