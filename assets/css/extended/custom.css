@@ -1,0 +1,57 @@
+/* Custom CSS for Hugo PaperMod theme - Portfolio Style */
+
+/* CSS Custom Properties */
+:root {
+    /* Heading gradient colors */
+    --gradient-start: #3b82f6;
+    --gradient-end: #8b5cf6;
+}
+
+.page-header h1,
+.post-title {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.logo a {
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.profile h1 {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Typing Animation Styles */
+#animated-title {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    font-weight: 500;
+    min-height: 2rem;
+    position: relative;
+}
+
+#animated-title::after {
+    content: '|';
+    color: var(--gradient-start);
+    animation: blink 1.2s infinite;
+    font-weight: 300;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}

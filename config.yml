@@ -78,7 +78,8 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Ubaid Shaikh
-    subtitle: "Software Engineer specializing in cloud infrastructure, observability, and systems programming. Expert in compiler development, WebAssembly, LLVM, Python, Kubernetes, and AWS."
+    animatedTitle: ['Software Engineer', 'Open Source Contributor',  'Cloud Infrastructure Expert', 'Compiler & WebAssembly Developer', 'Observability & Monitoring Specialist']
+    subtitle: "Passionate software engineer specializing in cloud infrastructure, observability, and systems programming. Expert in compiler development, WebAssembly, LLVM, Python, Kubernetes, and AWS with a focus on building robust, scalable solutions."
     imageUrl: "images/me.jpg"
     imageWidth: 120
     imageHeight: 120
