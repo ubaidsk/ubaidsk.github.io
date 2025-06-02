@@ -1,0 +1,10 @@
+{{- /* Head custom content area start */ -}}
+{{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
+
+{{- /* Include typing animation script */ -}}
+{{ $typingAnimation := resources.Get "js/typing-animation.js" }}
+{{ if $typingAnimation }}
+<script defer src="{{ $typingAnimation.RelPermalink }}"></script>
+{{ end }}
+
+{{- /* Head custom content area end */ -}}
