@@ -1,19 +1,20 @@
-# Ubaid's Blog
+# Ubaid's Portfolio & Blog
 
 [![Built with Hugo](https://img.shields.io/badge/Built%20with-Hugo-blue.svg)](https://gohugo.io/)
 [![Theme PaperMod](https://img.shields.io/badge/Theme-PaperMod-green.svg)](https://github.com/adityatelange/hugo-PaperMod)
 [![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A personal blog documenting my journey through various technical projects, programming experiences, and software development insights.
+A personal portfolio website and blog showcasing my technical projects, programming experiences, and software development journey. This site serves as both a professional portfolio and a platform for sharing insights from my work in compiler development, WebAssembly, and open source contributions.
 
 ## 🌐 Live Site
 
-Visit: [https://ubaidsk.github.io/blog/](https://ubaidsk.github.io/blog/)
+Visit: [https://ubaidsk.github.io/](https://ubaidsk.github.io/)
 
 ## 📝 About
 
-This blog covers various topics in software development, including:
+This portfolio website and blog covers various aspects of my work in software development, including:
 
+- **Portfolio Projects** - Showcasing technical achievements and professional work
 - **Compiler Development** - Backend implementations and language processing
 - **WebAssembly** - WASM development and optimization
 - **Open Source Contributions** - Project experiences and learnings
@@ -30,8 +31,8 @@ This blog covers various topics in software development, including:
 
 ```bash
 # Clone and setup
-git clone https://github.com/ubaidsk/blog.git
-cd blog
+git clone https://github.com/ubaidsk/ubaidsk.github.io.git
+cd ubaidsk.github.io
 git submodule update --init --recursive
 
 # Run locally
@@ -41,20 +42,26 @@ hugo server -D
 hugo --minify
 ```
 
-Visit [http://localhost:1313/blog/](http://localhost:1313/blog/) during development.
+Visit [http://localhost:1313/](http://localhost:1313/) during development.
 
 ## 📁 Structure
 
 ```
 ├── config.yml              # Hugo configuration
-├── content/posts/           # Blog posts
-├── assets/                  # Static assets
+├── content/                 # Site content
+│   ├── posts/              # Blog posts
+│   ├── about.md            # About page
+│   ├── projects.md         # Projects portfolio
+│   └── archives.md         # Post archives
+├── assets/                  # Static assets and custom styling
 ├── themes/PaperMod/         # Theme submodule
-└── public/                  # Generated site
+└── static/                  # Static files and images
 ```
 
 ## ✨ Features
 
+- Portfolio Showcase
+- Technical Blog
 - Fast and responsive design
 - Full-text search
 - Syntax highlighting
