@@ -21,7 +21,7 @@ Progressive Web App for sending WhatsApp messages without saving contacts. Featu
 
 ### Lagrangian Heuristics Based Parallel FPGA Router
 B.Tech project that improved ParaLarPD algorithm results using VPR 8.0 generated placement and netlists. Introduced novel Lagrange heuristic resulting in 5.08% reduction in minimum channel width and 0.68% reduction in critical path delay.  
-[Research Paper](https://ieeexplore.ieee.org/document/9815161)
+[Research Paper](https://doi.org/10.1109/ACCESS.2023.3328769)
 
 ### Analysis of Maze Generating Algorithms
 Implemented and analyzed four maze generating algorithms: Recursive Backtracking, Hunt and Kill, Aldous Broder, and Wilson's Algorithm. Comprehensive evaluation based on maze complexity.  
