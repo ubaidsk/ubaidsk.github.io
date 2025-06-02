@@ -113,10 +113,6 @@ params:
   # icon: icon.png
   # iconHeight: 35
 
-  # analytics:
-  #   google:
-  #     SiteVerificationTag: ""
-
   assets:
     disableHLJS: true
   #     favicon: "<link / abs url>"
@@ -171,7 +167,7 @@ markup:
 
 services:
   googleAnalytics:
-    id: G-ZRHK2B8FTL
+    id: G-7FKP35KL83
 #   instagram:
 #     disableInlineCSS: true
 #   x:
