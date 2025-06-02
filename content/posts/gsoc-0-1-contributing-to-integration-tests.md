@@ -7,7 +7,7 @@ TocOpen: false
 author: Ubaid Shaikh
 categories:
 - gsoc
-date: '2022-06-17'
+date: '2022-06-04'
 description: 'Pre-GSoC 22: Blog 1'
 series:
 - GSoC 2022
