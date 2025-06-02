@@ -1,7 +1,7 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://ubaidsk.github.io/blog/"
-title: Ubaid's Blog
+title: Ubaid Shaikh
 copyright: "© 2025 Ubaid Shaikh"
 theme: ["PaperMod"]
 
@@ -38,14 +38,14 @@ menu:
     - name: Posts
       url: /posts/
       weight: 11
+    - name: Projects
+      url: /projects/
+      weight: 12
     - name: Tags
       url: /tags/
-      weight: 12
+      weight: 13
     - name: Search
       url: /search/
-      weight: 13
-    - name: ubaidshaikh
-      url: https://ubaidsk.github.io
       weight: 14
 
 outputs:
@@ -56,7 +56,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Ubaid Shaikh's Blog - https://github.com/ubaidsk/blog"
+  description: "Ubaid Shaikh's Blog - Software Engineer specializing in cloud infrastructure, observability, and systems programming. Expert in compiler development, WebAssembly, LLVM, Python, Kubernetes, and AWS."
   author: Ubaid Shaikh
   # author: ["Me", "You"] # multiple authors
 
@@ -75,18 +75,31 @@ params:
   ShowToc: true
   comments: true
   images: ["images/papermod-cover.png"]
-
-  homeInfoParams:
-    Title: "Ubaid's Blog"
-    Content: >
-      - 👋 Welcome, this is my personal blog where I share my thoughts, experiences, and insights on various topics.
-
-      - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media.
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Ubaid Shaikh
+    subtitle: "Software Engineer specializing in cloud infrastructure, observability, and systems programming. Expert in compiler development, WebAssembly, LLVM, Python, Kubernetes, and AWS."
+    imageUrl: "images/me.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: Ubaid Shaikh
 
   socialIcons:
     - name: github
       title: Github
-      url: "https://github.com/ubaidsk/blog"
+      url: "https://github.com/ubaidsk"
+    - name: linkedin
+      title: LinkedIn
+      url: "https://linkedin.com/in/ubaidsk"
+    - name: stackoverflow
+      title: Stack Overflow
+      url: "https://stackoverflow.com/users/11474769/ubaid-shaikh"
+    - name: docker
+      title: Docker Hub
+      url: "https://hub.docker.com/u/ubaids"
+    - name: email
+      title: Email
+      url: "mailto:shaikhubaid769@gmail.com"
 
   editPost:
     URL: "https://github.com/ubaidsk/blog/tree/main/content"
