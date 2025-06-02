@@ -31,7 +31,7 @@
         {{- end }}
         {{- end }}
         <h1>{{ .title | default site.Title | markdownify }}</h1>
-        <h3 id="animated-title" data-typing-animation data-titles='{{ delimit .animatedTitle "," }}'></h3>
+        <h2 id="animated-title" data-typing-animation data-titles='{{ delimit .animatedTitle "," }}'></h2>
         <span>{{ .subtitle | markdownify }}</span>
         {{- partial "social_icons.html" -}}
 
