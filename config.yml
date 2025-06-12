@@ -56,7 +56,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Ubaid Shaikh's Blog - Software Engineer specializing in cloud infrastructure, observability, and systems programming. Expert in compiler development, WebAssembly, LLVM, Python, Kubernetes, and AWS."
+  description: "Ubaid Shaikh - Software Engineer specializing in cloud infrastructure, observability, and systems programming. Expert in compiler development, WebAssembly, LLVM, Python, Kubernetes, and AWS."
   author: Ubaid Shaikh
   # author: ["Me", "You"] # multiple authors
 
