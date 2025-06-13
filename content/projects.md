@@ -9,7 +9,7 @@ author: ['']
 
 ### Fortran-On-Web
 Interactive web interface for the LFortran compiler compiled to WebAssembly, enabling Fortran code execution directly in browsers. Built using NextJS and deployed live.  
-[Live](https://dev.lfortran.org/) | [GitHub](https://github.com/lfortran/lfortran)
+[Live](https://lfortran.github.io/Fortran-On-Web/) | [GitHub](https://github.com/lfortran/Fortran-On-Web)
 
 ### LFortran Compiler
 Contributed to the modern Fortran compiler ecosystem, implementing WebAssembly backend and WASI support to enable cross-platform Fortran development.  
