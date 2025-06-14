@@ -25,14 +25,14 @@ Developed Business Activity Monitoring platform with React dashboard and backend
 
 ## Education
 
-**B.Tech. Computer Science & Engineering** - IIT Indore *(2018 - 2022)*  
+**B.Tech. Computer Science & Engineering** - IIT Indore *(2018 - 2022)*
 CGPA: 9.14
 
 ## Technical Skills
 
-**Programming Languages:** Python, C++, C, JavaScript, Fortran  
-**Cloud & Infrastructure:** AWS, Kubernetes, Docker, Observability  
-**Web Technologies:** React, Node.js, NextJS, HTML/CSS  
+**Programming Languages:** Python, C++, C, JavaScript, Fortran
+**Cloud & Infrastructure:** AWS, Kubernetes, Docker, Observability
+**Web Technologies:** React, Node.js, NextJS, HTML/CSS
 **Tools:** Git, LLVM, WebAssembly, CI/CD
 
 ## Connect With Me
@@ -42,5 +42,3 @@ CGPA: 9.14
 - **Email**: [shaikhubaid769@gmail.com](mailto:shaikhubaid769@gmail.com)
 
 ---
-
-*Opinions expressed on this website and all subdomains (https://ubaidsk.github.io) are solely my own and do not express the views or opinions of my employer.*
