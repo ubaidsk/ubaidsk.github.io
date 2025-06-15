@@ -53,8 +53,9 @@ jobs:
         run: git submodule update --remote --merge
       - name: Build with Hugo
         run: |
-          hugo --environment production \
-            --buildDrafts --gc \
+          hugo \
+            --environment production \
+            --gc \
             --baseURL ${{ steps.pages.outputs.base_url }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
