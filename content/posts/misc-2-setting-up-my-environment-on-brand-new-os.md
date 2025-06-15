@@ -95,3 +95,7 @@ I use the following applications. I primarily use these because these are availa
 ## Windows Specific
 
 - WSL Manager
+
+# Shell specific setup
+
+Configure shell to save history for the last ten million commands along with the time point they were executed.
