@@ -15,7 +15,7 @@ title: Setting Up My Environment On Brand New OS
 draft: true
 ---
 
-I am writing this blog to note down my processes to run and tools to install when I have a brand new Operating System (OS) installed. I primarily use WSL (version 2) and MacOS as my development environments. Hence, you will find this blog tailored for these two OSes. Let's start.
+I am writing this blog to note down my processes to run and tools to install when I have a brand new Operating System (OS) installed. I primarily use WSL (version 2) and MacOS as my development environments. Hence, you will find this blog tailored for these two OSes.
 
 # Installing the tools and compilers
 
@@ -34,7 +34,7 @@ sudo apt install build-essential binutils curl git
 # install xcode tools, homebrew, etc.
 ```
 
-## micromamba: god father of many other packages
+## micromamba: godfather of package management
 
 Installing micromamba opens gateway for easily installing many other packages. I like to create a micromamba environment for almost all of my projects.
 
@@ -92,6 +92,6 @@ I use the following applications. I primarily use these because these are availa
 - Discord
 - Slack
 
-# Windows Specific
+## Windows Specific
 
 - WSL Manager
