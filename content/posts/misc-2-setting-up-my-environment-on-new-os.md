@@ -11,7 +11,7 @@ date: '2025-06-15'
 tags:
 - os
 - setup
-title: Setting Up My Environment On Brand New OS
+title: Setting Up My Environment On New OS
 draft: true
 ---
 
