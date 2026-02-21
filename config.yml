@@ -89,6 +89,9 @@ params:
     - name: github
       title: Github
       url: "https://github.com/ubaidsk"
+    - name: gitlab
+      title: GitLab
+      url: "https://gitlab.com/ubaidsk"
     - name: linkedin
       title: LinkedIn
       url: "https://linkedin.com/in/ubaidsk"
@@ -97,7 +100,7 @@ params:
       url: "https://stackoverflow.com/users/11474769/ubaid-shaikh"
     - name: docker
       title: Docker Hub
-      url: "https://hub.docker.com/u/ubaids"
+      url: "https://hub.docker.com/u/ubaidsk"
     - name: email
       title: Email
       url: "mailto:contact@ubaid.dev"
