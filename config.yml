@@ -80,7 +80,7 @@ params:
     title: Ubaid Shaikh
     animatedTitle: ['Software Engineer', 'Open Source Contributor',  'Cloud Infrastructure Expert', 'Compiler & WebAssembly Developer', 'Observability & Monitoring Specialist']
     subtitle: "Passionate software engineer specializing in cloud infrastructure, observability, and systems programming. Expert in compiler development, WebAssembly, LLVM, Python, Kubernetes, and AWS with a focus on building robust, scalable solutions."
-    imageUrl: "images/me.jpg"
+    imageUrl: "images/me.webp"
     imageWidth: 120
     imageHeight: 120
     imageTitle: Ubaid Shaikh

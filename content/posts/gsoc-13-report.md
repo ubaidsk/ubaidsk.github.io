@@ -233,9 +233,9 @@ at [lfortran/wasm_builds](https://github.com/lfortran/wasm_builds/)
 
 ### Live Demo:
 
-![Mandelbrot Demo](/images/GSoCReport1.gif)
+![Mandelbrot Demo](/images/GSoCReport1.webp)
 
-![Tabs Demo](/images/GSoCReport2.gif)
+![Tabs Demo](/images/GSoCReport2.webp)
 
 ## Future Work:
 There are tremendous possiblities of extending this work. Some of the future work includes the following:

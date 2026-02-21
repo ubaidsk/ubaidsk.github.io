@@ -29,8 +29,8 @@ I read this [great blog](https://medium.com/modern-fortran/first-year-of-fortran
 
 It all started with the following:
 
-![gsoc_start_mail](/images/gsoc_start_mail.png)
-![gsoc_start_mail_response](/images/gsoc_start_mail_response.png)
+![gsoc_start_mail](/images/gsoc_start_mail.webp)
+![gsoc_start_mail_response](/images/gsoc_start_mail_response.webp)
 
 Thanks to Ondřej, after installing `llvm 11.0`, all the tests ran successfully and the code-setup was successful.
 
