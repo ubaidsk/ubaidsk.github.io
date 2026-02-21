@@ -11,7 +11,7 @@ date: '2026-02-21'
 description: Rust examples for getting started (Part 2 draft)...
 tags:
 - wasm
-title: Getting Started With Rust: Common Algos (Part 2)
+title: 'Getting Started With Rust: Common Algos (Part 2)'
 draft: true
 ---
 

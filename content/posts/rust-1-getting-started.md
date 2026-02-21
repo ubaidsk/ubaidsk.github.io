@@ -11,7 +11,7 @@ date: '2025-10-19'
 description: Rust examples for getting started...
 tags:
 - wasm
-title: Getting Started With Rust: Common Algos (Part 1)
+title: 'Getting Started With Rust: Common Algos (Part 1)'
 ---
 
 It has been some time since I wrote my last blog post. I am glad to be writing again. This post is about the Rust programming language.
