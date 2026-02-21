@@ -11,30 +11,27 @@ date: '2025-10-19'
 description: Rust examples for getting started...
 tags:
 - wasm
-title: "Getting Started With Rust: Common Algos"
+title: Getting Started With Rust: Common Algos (Part 1)
 ---
 
-It is been sometime since I wrote my last blog. Finally getting to write one now! This one is about the Rust programming language.
+It has been some time since I wrote my last blog post. I am glad to be writing again. This post is about the Rust programming language.
 
-Recently, I have started learning rust. I wanted to document down some examples of common algos in C++ and how they would be written in Rust. Let's dive.
+Recently, I started learning Rust. I wanted to document examples of common algorithms in C++ and show how they can be written in Rust.
 
 
 # Plan
 
-I am hoping to document examples for the following common programs that we write in C++. My goal is not to use help from LLM agents to write this code. But, I would be using web search to reference rust documentation or other sites/blogs.
+In this post (Part 1), I focus on the first five common programs we typically implement in C++. My goal is to write the code myself without using LLM-generated implementations. I may still use web search to refer to Rust documentation and other learning resources.
 
-1. Hello world
+1. Hello World
 2. Add two numbers
 3. Simple binary operation calculator
-4. Todo List app
+4. Todo List App
 5. Implement merge sort
-6. Implement doubly linked list (add, find, delete)
-7. kmp pattern matching
-8. InOrder tree traversal
-9. DFS and BFS on graphs
-10. Text editor
 
-Let's dive in!
+Part 2 will cover the remaining five topics.
+
+Let us begin.
 
 # Implementation
 
@@ -949,95 +946,14 @@ fn main() {
 -4 -1 0 1 2 2 3 4 5 8
 ```
 
+## Wrap Up
 
-## Doubly linked list
+That concludes Part 1, which covers:
 
-### C++
+1. Hello World
+2. Add two numbers
+3. Simple binary operation calculator
+4. Todo List App
+5. Merge sort
 
-```c++
-
-```
-
-```shell
-
-```
-
-
-### Rust
-
-```c++
-
-```
-
-```shell
-
-```
-
-
-## KMP Pattern matching
-
-### C++
-
-```c++
-
-```
-
-```shell
-
-```
-
-### Rust
-
-```rust
-
-```
-
-```shell
-
-```
-
-## InOrder tree traversal
-
-### C++
-
-```c++
-
-```
-
-```shell
-
-```
-
-
-### Rust
-
-```rust
-
-```
-
-```shell
-
-```
-
-
-## Text editor
-
-### C++
-
-```c++
-
-```
-
-```shell
-
-```
-
-### Rust
-
-```rust
-
-```
-
-```shell
-
-```
+I will continue with the remaining five items in Part 2.
