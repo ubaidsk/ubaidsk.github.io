@@ -49,7 +49,7 @@ Before starting, make sure you have a working Docker runtime:
 
 Assuming WSL is already installed with your preferred Linux distribution, install Docker Desktop for Windows and enable WSL integration in Docker settings.
 
-![Docker WSL Integration](https://i.imgur.com/3Z5k4bH.png)
+![Docker WSL Integration](/images/docker-wsl-integration-enabled.png)
 
 Then verify Docker is available inside WSL:
 
